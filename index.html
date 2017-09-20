@@ -22,9 +22,9 @@
  </head>
         
      <body>
-         <div class='container'> 
+         <div class='container-fluid'> 
          <div class='row'>
-             <div class='col-12  border'>
+             <div class='col-md-12  border'>
                 <header id="header">
                     <h1>Web Ninja</h1>
                 </header>
@@ -33,12 +33,12 @@
 <!--End header-->
          
         <div class='row'>
-             <div class='col-12  border'>
+             <div class='col-md-12  border'>
                  <nav id="nav">
                     <ul class="button-wrap">
                         <button>Schedule</button>
-                        <button>CSS</button>
-                        <button>HTML</button>
+                        <button data-toggle="modal" data-target="#css3_modal">CSS</button>
+                        <button data-toggle="modal" data-target="#html5_modal">HTML</button>
                         <button>Responsive       Design</button>
                     </ul>
                  </nav>
@@ -47,7 +47,7 @@
 <!-- End Menu/Nav-->
          
                 <div class='row max-width'> 
-                    <div class="col-8  border">
+                    <div class="col-md-8  border">
                         <div id="main-content-wrapper">
                             <div class="side-by-side">
                                 <section class="image-content">
@@ -73,7 +73,7 @@
 <!--End main content wrapper-->
                         </div>    
 
-                    <div class='col-4  border'>
+                    <div class='col-md-4  border'>
                         <div id="aside-content-wrapper"> 
                             <aside id="aside-right">
                                 <h3>Latest Work</h3>
@@ -94,21 +94,21 @@
 <!--    End row    -->
            
 
-            <div id="favorite-sites" class="row">
-                
-            <div class='col-4  border'>
-                <img src='images/instagram.png'>
+        <div id="favorite-sites" >
+           <div class='row'>    
+            <div class='col-md-4  border'>
+                <img class='img-responsive' src='images/instagram.png'>
             </div>
-            <div class='col-4  border'>
-                    <img src="images/twitter.jpg">
+            <div class='col-md-4  border'>
+                    <img  class='img-responsive' src="images/twitter.jpg">
             </div>
-            <div class='col-4 , border'>
-                    <img src="images/facebook.jpg">
+            <div class='col-md-4 , border'>
+                    <img class='img-responsive'  src="images/facebook.jpg">
             </div>
-               
+           </div>     
             </div>
     <div class ='row'> 
-       <div class='col-12  border'>
+       <div class='col-md-12  border'>
          <footer><h1>Footy</h1></footer> 
        </div>  
     </div>     
@@ -116,12 +116,54 @@
          </div>
 <!--End container-->
      </div>
+<!-- Modal-html5 -->
+<div class="modal fade" id="html5_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <img src="images/html5.png">
+          <p><strong>HTML5</strong>HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current major version of the HTML standard.</p>
+          
+          <p> Source:</p><span><a href= 'https://en.wikipedia.org/wiki/HTML5'></a></span>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal-css3 -->
+<div class="modal fade" id="css3_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <img src= 'images/css3.png'>
+          <br>
+          <p><strong>CSS3</strong>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.[1] Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
          <script src="js/main.js"> </script>
-         <script src="js/bootstrap.min.js"> </script>
          <script src='js/jquery.min.js'></script>
+         <script src="js/bootstrap.min.js"> </script>
+         
      </body>
 </html>
-<!--video 6.1 at 9:30-->
 
 
 
